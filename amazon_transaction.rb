@@ -27,6 +27,7 @@ class AmazonTransaction
     discount = @discount / 100
     puts @total
     puts @discount
+    puts discount
     d = @total * discount
     # puts @total
     # puts discount
