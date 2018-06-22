@@ -26,7 +26,7 @@ class AmazonTransaction
   def apply_discount
     discount = @total * (@discount.to_f / 100.0)
     @total -= discount
-    return "After the discount, the total comes to $#{@total}."
+    return "After the discount, the total comes to $#{@total.to_i}."
   end
 
 end
