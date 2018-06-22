@@ -19,7 +19,10 @@ class AmazonTransaction
   end
 
   def add_item(title, price, quantity=1)
-    @items.push(title)
+    while quantity != 0
+      @items.push(title)
+      quantity -= 1
+    end
     @total += (price * quantity)
   end
 
@@ -31,5 +34,6 @@ class AmazonTransaction
     @total -= discount
     return "After the discount, the total comes to $#{@total.to_i}."
   end
+
 
 end
