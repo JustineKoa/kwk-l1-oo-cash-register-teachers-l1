@@ -20,6 +20,7 @@ class AmazonTransaction
 
   def add_item(title, price, quantity=1)
     @items.push(title)
+    puts @total
     @total += (price * quantity)
   end
 
