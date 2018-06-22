@@ -24,8 +24,6 @@ class AmazonTransaction
       @items.push(title)
       quantity -= 1
     end
-
-
   end
 
   def apply_discount
