@@ -23,7 +23,8 @@ class AmazonTransaction
       @items.push(title)
       quantity -= 1
     end
-    @total += (price * quantity)
+
+    @total += (price.to_f * quantity)
   end
 
   def apply_discount
