@@ -18,7 +18,7 @@ class AmazonTransaction
     @items
   end
 
-  def add_item(title, price, quanitity=1)
+  def add_item(title, price, quantity=1)
     @items.push(title)
     @total += (price * quantity)
   end
