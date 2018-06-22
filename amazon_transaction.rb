@@ -28,6 +28,7 @@ class AmazonTransaction
     # puts @total
     # puts @discount
     @total -= discount
+    return @total
   end
 
 end
